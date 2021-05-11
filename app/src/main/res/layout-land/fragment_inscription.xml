@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/gradient"
+    android:layout_height="match_parent"
+    tools:context=".Inscription">
+
+    <TextView
+        android:id="@+id/fontfamily"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="268dp"
+        android:layout_marginLeft="268dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="169dp"
+        android:layout_marginRight="169dp"
+        android:layout_marginBottom="0dp"
+        android:fontFamily="monospace"
+        android:text="S'inscrire"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        android:textStyle="bold|italic" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="185dp"
+        android:layout_height="131dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="77dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginRight="56dp"
+        android:layout_toStartOf="@+id/text_pass"
+        android:layout_toLeftOf="@+id/text_pass"
+        app:srcCompat="@drawable/android" />
+
+    <EditText
+        android:id="@+id/text_userame"
+        android:layout_width="275dp"
+        android:layout_height="38dp"
+        android:layout_above="@+id/text_pass"
+        android:layout_below="@+id/fontfamily"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="181dp"
+        android:layout_marginRight="181dp"
+        android:layout_marginBottom="35dp"
+        android:background="#11000000"
+        android:drawableLeft="@drawable/ic_action_uset"
+        android:ems="10"
+        android:hint="Entrez un nom d'utilisateur"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/text_pass"
+        android:layout_width="281dp"
+        android:layout_height="36dp"
+        android:layout_alignBottom="@+id/card_view_btn_egister"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="180dp"
+        android:layout_marginRight="180dp"
+        android:layout_marginBottom="161dp"
+        android:background="#11000000"
+        android:drawableLeft="@drawable/ic_action_pass"
+        android:ems="10"
+        android:hint="Entrez un mot de passe"
+        android:inputType="textPassword"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="14sp" />
+
+
+    <EditText
+        android:id="@+id/text_con_pass"
+        android:layout_width="278dp"
+        android:layout_height="33dp"
+        android:layout_above="@+id/card_view_btn_egister"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginEnd="181dp"
+        android:layout_marginRight="181dp"
+        android:layout_marginBottom="54dp"
+        android:background="#11000000"
+        android:drawableLeft="@drawable/ic_action_pass"
+        android:ems="10"
+        android:hint="Confirmez votre mot de passe"
+        android:inputType="textPassword"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="14sp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_btn_egister"
+        android:layout_width="273dp"
+        android:layout_height="44dp"
+        android:layout_above="@+id/go_to_login"
+
+        android:layout_marginStart="45dp"
+        android:layout_marginLeft="45dp"
+
+        android:layout_marginEnd="46dp"
+        android:layout_marginRight="46dp"
+        android:layout_marginBottom="-43dp"
+        android:layout_toStartOf="@+id/go_to_login"
+        android:layout_toLeftOf="@+id/go_to_login"
+        android:layout_toEndOf="@+id/linearLayout"
+        android:layout_toRightOf="@+id/linearLayout"
+        app:cardBackgroundColor="#258F85"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="10dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="INSCRIVEZ-VOUS"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/go_to_login"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="47dp"
+        android:layout_marginRight="47dp"
+        android:layout_marginBottom="37dp"
+        android:text="Se connecter"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="italic" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="2dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/twitterimage"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            app:srcCompat="@drawable/twitter" />
+
+        <ImageView
+            android:id="@+id/instaimage"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            app:srcCompat="@drawable/instagram" />
+
+        <ImageView
+            android:id="@+id/facebookimage"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            app:srcCompat="@drawable/facebook" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="269dp"
+        android:layout_height="38dp">
+
+    </RelativeLayout>
+
+</RelativeLayout>

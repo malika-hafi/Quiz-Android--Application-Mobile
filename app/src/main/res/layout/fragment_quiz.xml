@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DCE2E8"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context=".QuizActivity"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text_view_question_count"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableLeft="@drawable/ic_action_question"
+
+            android:background="@android:color/black"
+            android:freezesText="true"
+            android:text="Question: 1/x"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/text_view_score"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="180dp"
+            android:background="@color/black"
+
+            android:freezesText="true"
+            android:text="Score: 0"
+            android:textColor="@android:color/white" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_view_chapitre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:freezesText="true"
+        android:text="chapitre :"
+        android:textColor="#258F85" />
+
+    <TextView
+        android:id="@+id/text_view_difficulty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:freezesText="true"
+        android:text="difficulté :"
+        android:textColor="#258F85" />
+
+
+    <TextView
+        android:id="@+id/text_view_countdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="#258F85"
+
+        android:freezesText="true"
+        android:padding="5dp"
+        android:shadowRadius="@android:integer/config_longAnimTime"
+        android:text="00:30"
+        android:textColor="@color/white"
+        android:textSize="40sp" />
+
+
+    <TextView
+        android:id="@+id/text_view_question"
+        android:layout_width="377dp"
+        android:layout_height="156dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:background="#ECE9E9"
+        android:freezesText="true"
+        android:paddingTop="40dp"
+
+        android:text="Here will be the question text\nHere will be the question text\nHere will be the question text"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
+        >
+
+        <RadioButton
+            android:id="@+id/radio_button1"
+            android:layout_width="385dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:layout_marginBottom="10dp"
+            android:background="#258F85"
+            android:freezesText="true"
+            android:text="Option 1" />
+
+        <RadioButton
+            android:id="@+id/radio_button2"
+            android:layout_width="385dp"
+            android:layout_height="wrap_content"
+            android:text="Option 2"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/white"
+            android:background="#258F85"
+            android:freezesText="true"/>
+
+        <RadioButton
+            android:id="@+id/radio_button3"
+            android:layout_width="385dp"
+            android:layout_height="wrap_content"
+            android:background="#258F85"
+            android:freezesText="true"
+            android:text="Option 3"
+            android:textColor="@color/white" />
+    </RadioGroup>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/button_confirm_next"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        app:cardBackgroundColor="#033E38"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="CONFIRMER"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:freezesText="true"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

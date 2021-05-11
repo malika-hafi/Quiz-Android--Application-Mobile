@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/gradient"
+    android:layout_height="match_parent"
+    tools:context=".Inscription">
+    <TextView
+        android:id="@+id/fontfamily"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="monospace"
+        android:text="S'inscrire"
+
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        android:textStyle="bold|italic" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="212dp"
+        android:layout_height="190dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        app:srcCompat="@drawable/android" />
+
+    <EditText
+        android:id="@+id/text_userame"
+        android:layout_width="313dp"
+        android:layout_height="42dp"
+        android:layout_above="@+id/text_pass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:background="#11000000"
+        android:drawableLeft="@drawable/ic_action_uset"
+        android:ems="10"
+        android:hint="Entrez un nom d'utilisateur"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/text_pass"
+        android:layout_width="312dp"
+        android:layout_height="41dp"
+        android:layout_alignStart="@+id/text_userame"
+        android:layout_alignLeft="@+id/text_userame"
+        android:layout_alignBottom="@+id/card_view_btn_egister"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginBottom="170dp"
+        android:background="#11000000"
+        android:drawableLeft="@drawable/ic_action_pass"
+        android:ems="10"
+        android:hint="Entrez un mot de passe"
+        android:inputType="textPassword"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/text_con_pass"
+        android:layout_width="314dp"
+        android:layout_height="42dp"
+        android:layout_alignTop="@+id/text_pass"
+        android:layout_alignBottom="@+id/card_view_btn_egister"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginBottom="101dp"
+
+        android:background="#11000000"
+        android:drawableLeft="@drawable/ic_action_pass"
+        android:ems="10"
+        android:hint="Confirmez votre mot de passe"
+        android:inputType="textPassword"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="14sp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_btn_egister"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/go_to_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        app:cardBackgroundColor="#258F85"
+        android:onClick="changecolor"
+
+        app:cardCornerRadius="25dp"
+        app:cardElevation="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="INSCRIVEZ-VOUS"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/go_to_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="90dp"
+        android:text="Se connecter"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="italic" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignStart="@+id/imageView"
+        android:id="@+id/linearLayout">
+
+        <ImageView
+            android:id="@+id/twitterimage"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/twitter" />
+
+        <ImageView
+            android:id="@+id/instaimage"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            app:srcCompat="@drawable/instagram" />
+
+        <ImageView
+            android:id="@+id/facebookimage"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            app:srcCompat="@drawable/facebook" />
+    </LinearLayout>
+
+</RelativeLayout>

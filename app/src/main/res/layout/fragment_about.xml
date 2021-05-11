@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+
+        tools:context=".AboutFragment">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A propos"
+            android:textSize="30dp"
+            android:layout_marginTop="30dp"
+            android:textColor="#258F85"
+            android:layout_gravity="center"
+            />
+        <View
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#2E44BC"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="sans-serif-condensed"
+            android:justificationMode="inter_word"
+            android:text="Cette application est faite à des fins éducatives. Vous pouvez trouver la plupart des quiz Android ici sur la sélection des réponses correctes l'option sera changée en couleur verte sinon en rouge. Vous pouvez consulter votre score, choisir le type de chapitre et le niveau de difficulté des questions."
+            android:textColor="#514D4D"
+            android:textSize="20dp"
+
+            android:textStyle="italic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Réalisé par"
+            android:textSize="30dp"
+            android:layout_marginTop="60dp"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+               android:src="@drawable/photo"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                />
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+               android:src="@drawable/malika"
+                android:layout_weight="1"
+
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp">
+                />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="BENABDELKRIM Amina"
+                    android:textColor="@color/black"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:text="email:aminabenabdelkrim@gmail.com"
+                    android:textColor="#4C4646"
+                    android:textSize="10dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="56dp">
+                />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HAFI Malika"
+                    android:layout_marginLeft="35dp"
+
+                    android:textColor="@color/black"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="email:malikahafi6@gmail.com"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#4C4646"
+                    android:textSize="10dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+

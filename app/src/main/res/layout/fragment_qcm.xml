@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Qcm">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/text_view_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#4AC6BB"
+        android:freezesText="true"
+        android:text="Score: 0"
+        android:textColor="@android:color/black" />
+    <TextView
+        android:id="@+id/text_view_question_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_score"
+        android:text="Question: 1/x"
+        android:textColor="#258F85"
+        android:freezesText="true"
+        />
+    <TextView
+        android:id="@+id/text_view_chapitre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_question_count"
+        android:text="chapitre :"
+        android:textColor="#258F85"
+        android:freezesText="true"
+        />
+    <TextView
+        android:id="@+id/text_view_difficulty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_chapitre"
+        android:text="difficulté :"
+        android:textColor="#258F85"
+        android:freezesText="true"
+        />
+    <TextView
+        android:id="@+id/text_view_countdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:text="00:30"
+        android:textColor="#258F85"
+        android:textSize="40sp"
+        android:layout_alignParentRight="true"
+        android:freezesText="true"/>
+
+    <TextView
+        android:id="@+id/text_view_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/radio_group"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:freezesText="true"
+        android:text="Here will be the question text\nHere will be the question text\nHere will be the question text"
+        android:textAlignment="center"
+        android:textColor="#5A5555"
+        android:textSize="20sp" />
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        >
+        <RadioButton
+            android:id="@+id/radio_button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option 1"
+            android:freezesText="true"/>
+        <RadioButton
+            android:id="@+id/radio_button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option 2"
+            android:freezesText="true"/>
+        <RadioButton
+            android:id="@+id/radio_button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option 3"
+            android:freezesText="true"/>
+    </RadioGroup>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/button_confirm_next"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/radio_group"
+        android:layout_marginTop="16dp"
+        app:cardBackgroundColor="#258F85"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="CONFIRMER"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:freezesText="true"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

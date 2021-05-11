@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Reviser">
+    <!--recyler view pour afficher la liste des etudiants-->
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/materialTextView"
+        android:layout_width="248dp"
+        android:layout_height="45dp"
+        android:drawableLeft="@drawable/ic_action_correction"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:text="  Vos Réponses"
+        android:textColor="#4E7475"
+        android:textSize="20dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"/>
+
+
+        tools:ignore="MissingConstraints" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle"
+        android:layout_width="409dp"
+        android:layout_height="676dp"
+        android:clipToPadding="false"
+        android:paddingBottom="590dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="55dp"
+        tools:listitem="@layout/item_layout">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <!--button ajouter pour aller vers l'interface qui permet d'ajouter un nouvel éudiant-->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addrecordBtn"
+        android:layout_width="76dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:background="@color/purple_700"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="@+id/recycle"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.924"
+        tools:ignore="MissingConstraints"
+        android:src="@drawable/ic_action_check"
+        android:onClick="Score"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

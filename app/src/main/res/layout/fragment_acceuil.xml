@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DCE2E8"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".Acceuil">
+    />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="QCM sur Android"
+        android:layout_gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="35sp" />
+
+    <TextView
+        android:id="@+id/text_userame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Bonjour ..."
+        android:textColor="#258F85"
+        android:textSize="20sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/text_view_highscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Highscore: 0"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="veuillez choisir un chapitre et un niveau de"
+        android:textColor="#777272"
+        android:textSize="17sp"
+        android:textStyle="italic" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="difficulté des questions"
+        android:textColor="#777272"
+        android:textSize="17sp"
+        android:textStyle="italic" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/spinner_chapitre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            />
+
+        <Spinner
+            android:id="@+id/spinner_difficulty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/button_start_quiz"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"
+        app:cardBackgroundColor="#033E38"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="COMMENCER"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/deconnexion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Se deconnecter"
+        android:onClick="se_deconnecter"
+        android:textColor="#062925"
+        android:textSize="18sp"
+        android:textStyle="bold|italic" />
+    <TableLayout
+        style="@style/frag1TableLayout"
+
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp">
+
+        <TableRow style="@style/frag1HeaderTableRow">
+
+            <TextView
+                style="@style/frag1HeaderCol"
+                android:padding="10dp"
+                android:text="chapitre" />
+
+            <TextView
+                style="@style/frag1HeaderCol"
+                android:padding="10dp"
+                android:text="Description" />
+        </TableRow>
+
+        <TableRow
+            style="@style/frag1TableRow"
+            android:background="#70C6BE">
+
+            <TextView
+                style="@style/frag1Col"
+                android:padding="10dp"
+                android:text="Chapitre 1" />
+
+            <TextView
+                style="@style/frag1Col"
+                android:padding="10dp"
+                android:text="Introduction" />
+        </TableRow>
+
+        <TableRow style="@style/frag1TableRow">
+
+            <TextView
+                style="@style/frag1Col"
+                android:padding="10dp"
+                android:text="Chapitre 2" />
+
+            <TextView
+                style="@style/frag1Col"
+                android:padding="10dp"
+                android:text="Les intents" />
+        </TableRow>
+
+        <TableRow style="@style/frag1TableRow"
+            android:background="#70C6BE">
+
+            <TextView
+                style="@style/frag1Col"
+                android:padding="10dp"
+                android:text="Chapitre 3" />
+
+            <TextView
+                style="@style/frag1Col"
+                android:padding="10dp"
+                android:text="Stockage" />
+        </TableRow>
+    </TableLayout>
+
+
+
+
+</LinearLayout>
